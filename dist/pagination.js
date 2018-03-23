@@ -314,7 +314,7 @@
                   title: 'Previous page',
                   onClick: this.handleClickPage.bind(this, pagination.currentPage() - 1)
                 },
-                ' < '
+                ' Previous'
               )
             ),
             this.renderFirstPage(),
@@ -333,7 +333,7 @@
                   title: 'Next page',
                   onClick: this.handleClickPage.bind(this, pagination.currentPage() + 1)
                 },
-                ' > '
+                ' Next '
               )
             )
           )
