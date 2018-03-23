@@ -205,7 +205,7 @@ export default class GridPaging extends React.Component {
     ) {
       return (<div className={containerClass}></div>);
     }
-
+    console.log("debugging");
     return (
       <div className={containerClass}>
         <ul className="pagination">
