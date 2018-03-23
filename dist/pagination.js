@@ -199,7 +199,7 @@
         var liClass = pagination.currentPage() === page ? 'active' : '';
 
         return _react2.default.createElement(
-          'li',
+          'div',
           { key: 'page ' + page, className: liClass },
           _react2.default.createElement(
             'a',
@@ -227,7 +227,7 @@
       value: function renderPreviousPages() {
         if (this.state.displayedPages.length && this.state.displayedPages[0] > 2) {
           return _react2.default.createElement(
-            'li',
+            'div',
             null,
             _react2.default.createElement(
               'a',
@@ -301,10 +301,10 @@
           'div',
           { className: containerClass },
           _react2.default.createElement(
-            'ul',
+            'div',
             { className: 'pagination' },
             _react2.default.createElement(
-              'li',
+              'div',
               { className: pagination.currentPage() === 1 ? 'disabled' : '' },
               _react2.default.createElement(
                 'a',
@@ -323,7 +323,7 @@
             this.renderNextPages(),
             this.renderLastPage(),
             _react2.default.createElement(
-              'li',
+              'div',
               { className: pagination.currentPage() === pagination.totalPages() ? 'disabled' : '' },
               _react2.default.createElement(
                 'a',
